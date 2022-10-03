@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #011;
+  --primary-color-ligth: rgb(0, 37, 37);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.container {
+  max-width: 640px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/*moduficando o body*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+/*alterando posição da caixa de texto, dos textos, e boatao*/
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*estilizando caixa de texto*/
+form input {
+  font-size: 24px;
+  height: 40px;
+  padding: 0 20px;
+}
+
+/*muda a cor da borda da caixa de texto*/
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+/*estilizando o botao de enviar*/
+form button {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/*muda de cor ao passar o mouse*/
+form button:hover {
+  background: var(--primary-color-ligth);
+}
+
+/*muda de cor ao clicar*/
+form button:active {
+  background: rgb(0, 95, 29);
+}
+
+p {
+  line-height: 0.7em;
+}
+
+div section h2 {
+  margin-bottom: 20px;
+}

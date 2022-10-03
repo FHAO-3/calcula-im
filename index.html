@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculo de IMC
+  </title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Tabela de IMC</h1>
+    <h2>IMC</h2>
+    <p>Menos de 18.5 = ABAIXO DO PESO</p>
+    <p>De 18.5 e 24.9 = PESO NORMAL</p>
+    <p>De 25 a 29.9 = SOBREPESO</p>
+    <p>De 30 a 34.9 = OBESIDADE GRAU |</p>
+    <p>De 35 a 39.9 = OBESIDADE GRAU ||</p>
+    <p>Acima de 40 = OBEIDADE GRAU |||</p>
+
+    </p>
+    <h2>Nos passe o seus dados abaixo</h2>
+    <form id="form">
+      <label for="input-test-1">Digite seu nome: </label>
+      <input type="text" id="name">
+
+      <label for="input-test-4">Digite sua altura em metros (M):</label>
+      <input type="number" step="any" min="0" id="heigth">
+
+      <label for="input-test-4">Digite seu peso em quilos (KG): </label>
+      <input type="number" step="any" min="0" max="122" id="kilos">
+
+      <button id="send">Enviar</button>
+    </form>
+  </section>
+
+  <div id="result"></div>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
